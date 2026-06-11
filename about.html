@@ -1,145 +1,297 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>예약센터 소개 &amp; 100% 리얼 UGC 후기 | 합정 셔츠룸 모음</title>
-  <meta name="description" content="합정 셔츠룸 안심 모음센터의 설립 비하인드 스토리와 합정역 밤거리를 제대로 조진 브로들의 솔직담백한 실제 후기!">
-  <meta name="keywords" content="합정 셔츠룸 모음, 합정 셔츠룸 후기, 서교동 셔츠룸 추천">
-  <meta name="bpaas-design-system" content="premium-minimal">
-  <meta name="bpaas-design-theme" content="crimson-gold">
-  <link rel="canonical" href="https://t3b06-hj-shirts-list.pages.dev/about.html">
-  <style>
-    :root {
-      --bg-color: #140c0c;
-      --bg-card: #241414;
-      --accent: #dc2626;
-      --text: #fecdd3;
-      --text-muted: #fb7185;
-      --border: rgba(255, 255, 255, 0.05);
-      --font-stack: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text);
-      font-family: var(--font-stack);
-      line-height: 1.8;
-      padding: 0 24px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 30px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .brand {
-      font-size: 1.6rem;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-    }
-    nav { display: flex; gap: 28px; }
-    nav a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    nav a:hover { color: #fff; }
-    main { padding-bottom: 60px; }
-    h2 { font-size: 2.2rem; font-weight: 900; color: #fff; margin-bottom: 28px; }
-    .about-desc { font-size: 1.1rem; color: var(--text); margin-bottom: 40px; }
-    .about-desc p { margin-bottom: 20px; }
-    .reviews-section { margin-top: 60px; }
-    .review-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 30px;
-      border-radius: 14px;
-      margin-bottom: 24px;
-    }
-    .review-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 14px;
-      font-size: 0.9rem;
-      font-weight: 800;
-    }
-    .reviewer-stars { color: #fbbf24; }
-    .review-content { font-size: 1rem; color: var(--text-muted); }
-    footer {
-      border-top: 1px solid var(--border);
-      padding-top: 50px;
-      margin-top: 100px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-    }
-    footer a { color: var(--text-muted); text-decoration: none; margin: 0 14px; font-weight: 700; }
-    footer a:hover { color: var(--accent); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>합정 셔츠룸 정보 - 셔츠 한 장의 반란</title>
+    <meta name="description" content="합정 셔츠룸의 진짜 정보. 가격, 서비스, 분위기까지 다 까발린다. 전화 한 통이면 입장 가능. 010-6279-0862">
+    <meta name="keywords" content="합정 셔츠룸, 합정 셔츠룸 모음, 셔츠룸 추천, 합정 유흥, 합정 술집, 셔츠룸 가격, 합정 셔츠룸 후기, 거리 브루탈리즘">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b06-hj-shirts-list.vercel.app/info">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <meta property="og:title" content="합정 셔츠룸 정보 - 셔츠 한 장의 반란">
+    <meta property="og:description" content="합정 셔츠룸의 진짜 정보. 가격, 서비스, 분위기까지 다 까발린다. 전화 한 통이면 입장 가능.">
+    <meta property="og:image" content="https://t3b06-hj-shirts-list.vercel.app/og-image.jpg">
+    <meta property="og:url" content="https://t3b06-hj-shirts-list.vercel.app/info">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        /* ----- RESET & BASE ----- */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1a1a1a;
+            color: #d4d4d4;
+            line-height: 1.6;
+            padding: 0 1rem;
+        }
+        ::selection {
+            background: #ffea00;
+            color: #000;
+        }
+        img, svg, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            color: #ffea00;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+        }
+        a:hover, a:focus {
+            color: #fff;
+            background: #ffea00;
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        /* ----- TYPOGRAPHY ----- */
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            color: #ffea00;
+            border-bottom: 4px solid #ffea00;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            color: #fff;
+            border-left: 6px solid #ffea00;
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ffea00;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        .highlight {
+            background: #ffea00;
+            color: #000;
+            padding: 0.2rem 0.5rem;
+            font-weight: bold;
+        }
+        .block-label {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border: 2px solid #ffea00;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        /* ----- LAYOUT ----- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #2a2a2a;
+            border: 2px solid #444;
+            padding: 1.5rem;
+            transition: border-color 0.2s;
+        }
+        .card:hover {
+            border-color: #ffea00;
+        }
+        /* ----- NAVIGATION ----- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 3px solid #ffea00;
+            margin-bottom: 2rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ffea00;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            background: #ffea00;
+            color: #000;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #ffea00;
+            border-radius: 2px;
+        }
+        /* ----- RESPONSIVE 768 ----- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            nav {
+                flex-wrap: wrap;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                background: #1a1a1a;
+                border: 2px solid #ffea00;
+                padding: 1rem 0;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* ----- HERO ----- */
+        .hero {
+            padding: 3rem 0;
+            border-bottom: 2px dashed #ffea00;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: #aaa;
+        }
+        /* ----- FAQ ----- */
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #444;
+            padding-bottom: 1rem;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #ffea00;
+            cursor: pointer;
+        }
+        .faq-answer {
+            margin-top: 0.5rem;
+            color: #ccc;
+        }
+        /* ----- FOOTER ----- */
+        footer {
+            border-top: 3px solid #ffea00;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .tel-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffea00;
+            border: 2px solid #ffea00;
+            padding: 0.5rem 1.5rem;
+            text-decoration: none;
+        }
+        .tel-link:hover {
+            background: #ffea00;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="index.html" class="brand">🩸 합정 안심 지도</a>
-      <nav>
-        <a href="index.html">홈</a>
-        <a href="about.html">소개</a>
-      </nav>
-    </header>
-    <main>
-      <h2>합정 정찰제 지도 출범 비화</h2>
-      <div class="about-desc">
-        <p>반갑다 브로! 합정동 밤거리에서 허무하게 바가지 마찰 피해를 당하고 술이 확 깨버렸던 아픈 경험이 한 번쯤 있을 거다. 형 역시 합정 로터리 주변에서 소중한 단골 동생들이 삐끼 낚시 정보에 당하는 걸 실시간으로 지켜보면서 깊은 분노를 느꼈다 브로. 투명한 가격 룰과 쾌적한 룸 환경을 보장받는 안전지대가 간절히 필요하겠다 싶어 이 예약센터 모음을 전격 출범시켰다.</p>
-        <p>우리는 합정동과 망원동 경계 상권의 우수 매장주들과 매달 강력한 정찰 요금 준수 MOU를 체결하고 있다 브로. 형 가이드를 이용하는 브로들은 소파 위생 관리, 담배 공기 탈취 정화 주기가 철저한 에어컨 쾌적한 매장만 엄격하게 연결받는다. 복잡한 눈탱이 시비 마찰 걱정일랑 일절 접어두고 오늘 밤은 형이 설계해 둔 클린 예약 다이얼로 완벽한 도파민 밤을 즐겨라 브로!</p>
-      </div>
+    <div class="container">
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="info.html" class="active">정보</a></li>
+                <li><a href="recommend.html">추천</a></li>
+                <li><a href="review.html">후기</a></li>
+            </ul>
+        </nav>
 
-      <div class="reviews-section">
-        <h2>단골 브로들의 100% 생생 UGC 후기</h2>
-        
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">합정인싸 브로</span>
-            <span class="review-date">2026.05.24</span>
-          </div>
-          <p class="review-content">합정역 먹자골목 근처 셔츠룸 중에 진짜 가성비 최고 존엄임. 형 다이얼로 꽂아서 예약하고 갔는데 맥주 혜택 보너스까지 알아서 척척 적용해 줘서 마찰 1도 없이 기분 째지게 지르고 왔습니다 브로! 강추임다.</p>
-        </div>
+        <section class="hero">
+            <h1>합정 셔츠룸<br>정보</h1>
+            <p>셔츠 한 장으로 들어가는 야생. 여기 다 까발린다.</p>
+        </section>
 
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">서교동보스 브로</span>
-            <span class="review-date">2026.05.19</span>
-          </div>
-          <p class="review-content">룸 청결함이 거의 오성급 호텔급이네요 브로. 공기청정기 풀가동이라 밀폐된 방인데도 머리 1도 안 아프고 담배 찌든 내 마찰이 전혀 없어서 끝까지 쾌적하게 즐겼습니다. 관리 주기가 아주 잘 도는 듯!</p>
-        </div>
+        <section>
+            <h2>이게 뭔데?</h2>
+            <p>합정 셔츠룸. 이름만 들어도 피부가 반응한다. 4평짜리 방, 셔츠 한 장, 그리고 너의 야성이 펼쳐지는 공간. 가격? 서비스? 분위기? 다 알려준다. 근데 전화로 직접 확인하는 게 더 빠르다. <span class="highlight">010-6279-0862</span></p>
+            <p>여기는 합정역 2번 출구에서 3분. 곳곳에 숨은 셔츠룸들이 기다린다. 콘크리트 벽에 그래피티, 어두운 조명 속에서 펼쳐지는 진짜. 가짜는 집에나 있어라.</p>
+        </section>
 
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">마포구회장 브로</span>
-            <span class="review-date">2026.05.08</span>
-          </div>
-          <p class="review-content">매번 낚시질하는 뜨내기 광고들 때문에 대뇌 피질 아팠는데, 010-6279-0862 핫라인 하나로 예약 고민 바로 날려버림 브로. 정찰제라 지갑 부담도 전혀 없고 최고입니다!</p>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>&copy; 2026 합정 셔츠룸 안심 가이드. All Rights Reserved.</p>
-      <p style="margin-top:16px;">
-        <a href="index.html">홈</a> | 
-        <a href="about.html">소개</a>
-      </p>
-    </footer>
-  </div>
+        <section>
+            <h2>상세 정보</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>💀 서비스</h3>
+                    <p>셔츠룸 기본기: 마인드, 분위기, 그리고 선택. 1:1 맞춤형으로 돌아간다. 룸마다 다른 색깔, 직접 느껴라. 말로 설명하기엔 존나 아깝다.</p>
+                </div>
+                <div class="card">
+                    <h3>💰 가격</h3>
+                    <p>기본: 20만 원대부터. 상한가는 니가 정한다. VIP 코스는 따로 전화해라. 여기선 대충 찍는다. <span class="highlight">010-6279-0862</span></p>
+                </div>
+                <div class="card">
+                    <h3>📍 위치 & 분위기</h3>
+                    <p>합정역 2번 출구 도보 3분. 골목 안쪽, 표지판 없음. 찾는 것도 게임이다. 내부는 브루탈리즘 그 자체. 거친 콘크리트, 낮은 조명, 숨 쉬는 긴장감.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>자주 묻는 질문</h2>
+            <div class="faq-item">
+                <div class="faq-question">Q: 가격이 어떻게 되나요? 구체적으로.</div>
+                <div class="faq-answer">A: 전화해라. 여기 다 쓰면 긴 빌어먹을 소설이 된다. 기본은 20부터
 </body>
 </html>
