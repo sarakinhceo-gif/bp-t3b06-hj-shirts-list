@@ -1,124 +1,95 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="sage" data-build="3f9a7c1d">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>합정 셔츠룸 블로그 | 합정 셔츠룸 모음</title>
-    <meta name="description" content="합정 셔츠룸의 진짜 이야기. 화려한 조명 아래 숨은 야성을 찾아서. 거리 브루탈리즘의 정수를 경험하라. 전화 한 통으로 입장. 010-6279-0862">
-    <meta name="keywords" content="합정 셔츠룸, 합정 셔츠룸 모음, 셔츠룸 추천, 합정 유흥, 합정 술집, 셔츠룸 가격, 합정 셔츠룸 후기, 거리 브루탈리즘, 셔츠룸 블로그">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://t3b06-hj-shirts-list.vercel.app/blog">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <meta property="og:title" content="합정 셔츠룸 블로그 | 합정 셔츠룸 모음">
-    <meta property="og:description" content="합정 셔츠룸의 진짜 이야기. 화려한 조명 아래 숨은 야성을 찾아서. 거리 브루탈리즘의 정수를 경험하라.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b06-hj-shirts-list.vercel.app/blog">
-    <meta property="og:image" content="https://t3b06-hj-shirts-list.vercel.app/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="합정 셔츠룸 블로그 | 합정 셔츠룸 모음">
-    <meta name="twitter:description" content="합정 셔츠룸의 진짜 이야기. 화려한 조명 아래 숨은 야성을 찾아서. 거리 브루탈리즘의 정수를 경험하라.">
-    <style>
-        /* ----- RESET & BASE ----- */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
-        body { font-family: 'Courier New', Courier, monospace; background: #1a1a1a; color: #e0e0e0; line-height: 1.6; min-height: 100vh; overflow-x: hidden; }
-        ::selection { background: #f4e000; color: #1a1a1a; }
-        img, svg, video { max-width: 100%; height: auto; display: block; }
-        a { color: #f4e000; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
-        a:hover, a:focus { border-bottom-color: #f4e000; outline: none; }
-        ul { list-style: none; }
-
-        /* ----- TYPOGRAPHY ----- */
-        h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; text-transform: uppercase; letter-spacing: -1px; line-height: 1.1; margin-bottom: 0.5em; color: #f4e000; }
-        h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 600; text-transform: uppercase; letter-spacing: -0.5px; margin-bottom: 0.6em; color: #f4e000; }
-        h3 { font-size: clamp(1.2rem, 3vw, 1.6rem); font-weight: 600; margin-bottom: 0.4em; color: #f4e000; }
-        p { font-size: 1rem; margin-bottom: 1.2em; }
-        .highlight { background: #f4e000; color: #1a1a1a; padding: 0.2em 0.4em; display: inline-block; font-weight: bold; }
-        .block-label { display: inline-block; background: #333; color: #f4e000; padding: 0.3em 0.8em; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5em; border: 1px solid #f4e000; }
-
-        /* ----- LAYOUT ----- */
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
-        .site-header { background: #111; border-bottom: 2px solid #f4e000; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; color: #f4e000; border: none; }
-        .logo:hover { border: none; }
-
-        /* ----- NAVIGATION ----- */
-        .nav-list { display: flex; gap: 1.5rem; align-items: center; }
-        .nav-list a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; border: none; color: #e0e0e0; padding: 0.3rem 0; }
-        .nav-list a:hover { color: #f4e000; border: none; }
-        .nav-list .tel-link { background: #f4e000; color: #1a1a1a; padding: 0.4rem 1.2rem; border-radius: 0; font-weight: bold; }
-        .nav-list .tel-link:hover { background: #e0c800; color: #1a1a1a; }
-
-        /* Hamburger */
-        .hamburger { display: none; flex-direction: column; gap: 4px; cursor: pointer; background: none; border: none; padding: 4px; }
-        .hamburger span { display: block; width: 28px; height: 3px; background: #f4e000; transition: all 0.3s; }
-        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-        .hamburger.active span:nth-child(2) { opacity: 0; }
-        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-
-        /* ----- HERO / MAIN ----- */
-        .hero { padding: 3rem 0; border-bottom: 1px solid #333; }
-        .hero h1 { margin-bottom: 0.3em; }
-        .hero .subhead { font-size: 1.1rem; color: #aaa; margin-bottom: 1.5rem; }
-        .btn { display: inline-block; background: #f4e000; color: #1a1a1a; padding: 0.6rem 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border: 2px solid #f4e000; transition: all 0.2s; cursor: pointer; }
-        .btn:hover { background: transparent; color: #f4e000; }
-
-        /* ----- BLOG POST ----- */
-        .blog-post { padding: 3rem 0; }
-        .blog-post article { max-width: 800px; margin: 0 auto; }
-        .blog-post .post-meta { font-size: 0.85rem; color: #888; margin-bottom: 2rem; border-bottom: 1px solid #333; padding-bottom: 0.8rem; }
-        .blog-post .post-meta span { margin-right: 1.5rem; }
-        .blog-post blockquote { border-left: 4px solid #f4e000; padding: 1rem 1.5rem; margin: 1.5rem 0; background: #222; font-style: italic; color: #ccc; }
-        .blog-post .highlight-box { background: #222; padding: 1.5rem; border: 1px solid #444; margin: 1.5rem 0; }
-        .blog-post .highlight-box h3 { margin-bottom: 0.5rem; }
-        .blog-post ul { margin: 1.2rem 0; padding-left: 1.5rem; list-style: disc; }
-        .blog-post ul li { margin-bottom: 0.5rem; }
-
-        /* ----- FOOTER ----- */
-        .site-footer { background: #111; border-top: 2px solid #f4e000; padding: 2rem 0; text-align: center; font-size: 0.85rem; color: #888; }
-        .site-footer .footer-nav { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
-        .site-footer .footer-nav a { color: #e0e0e0; border: none; }
-        .site-footer .footer-nav a:hover { color: #f4e000; }
-
-        /* ----- RESPONSIVE 768 ----- */
-        @media (max-width: 768px) {
-            .hamburger { display: flex; }
-            .nav-list { display: none; flex-direction: column; background: #111; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; border-bottom: 2px solid #f4e000; gap: 0.8rem; }
-            .nav-list.open { display: flex; }
-            .nav-list a { margin: 0; }
-            .header-inner { position: relative; }
-            .blog-post .post-meta span { display: block; margin-bottom: 0.3rem; }
-        }
-
-        /* ----- UTILITY ----- */
-        .text-center { text-align: center; }
-        .mt-2 { margin-top: 2rem; }
-        .mb-2 { margin-bottom: 2rem; }
-    </style>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "합정 셔츠룸 모음",
-        "description": "합정 셔츠룸 총정리. 셔츠 한 장에 숨은 야성, 찢어진 데님보다 거친 서비스. 전화 한 통으로 입장.",
-        "url": "https://t3b06-hj-shirts-list.vercel.app/",
-        "telephone": "010-6279-0862",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "합정",
-            "addressRegion": "서울",
-            "addressCountry": "KR"
-        }
-    }
-    </script>
+  <meta charset="UTF-8">
+  <title>합정 셔츠룸 블로그 — 정보 가이드</title>
+  <meta name="description" content="합정에 위치한 셔츠룸을 방문하기 전, 상황별 체크리스트와 선택 포인트를 한눈에 정리했습니다. 초보자도 쉽게 이해할 수 있는 친절한 안내를 만나보세요.">
+  <meta name="keywords" content="합정 셔츠룸, 셔츠룸 블로그, 합정 셔츠룸 체크리스트, 셔츠룸 선택 가이드">
+  <link rel="canonical" href="https://hapjeong-shirt-guide.program-school.online/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hapjeong-shirt-guide.program-school.online/blog.html">
+  <meta property="og:title" content="합정 셔츠룸 블로그 — 정보 가이드">
+  <meta property="og:description" content="합정 셔츠룸을 미리 정하거나 당일에 결정할 때 필요한 체크리스트와 상황별 추천을 한눈에 확인하세요.">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- CSS 파일은 기존 디자인 시스템을 그대로 사용합니다 -->
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="/" class="logo">합정셔츠룸</a>
-            <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
-                <span></span><
+  <!-- Header & Navigation -->
+  <header class="header">
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="m-nav-n67r">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="r-txt-ra73">
+      <ul>
+        <li><a href="/index.html">홈</a></li>
+        <li><a href="/list.html">셰츠룸 모음</a></li>
+        <li><a href="/blog.html" class="active">블로그</a></li>
+        <li><a href="/contact.html">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="m-hero-tq8a">
+    <h1>합정 셔츠룸을 위한 완벽 체크리스트</h1>
+    <span>처음이라면? 언제든 필요한 정보를 한눈에!</span>
+  </section>
+
+  <!-- Main Content -->
+  <main class="r-txt-ra73">
+    <!-- 1. 방문 전 기본 체크리스트 -->
+    <section id="basic-checklist">
+      <h2>방문 전 꼭 확인해야 할 기본 체크리스트</h2>
+      <p>셔츠룸을 처음 찾아가는 경우, 가장 먼저 해야 할 일은 기본적인 운영 정보를 확인하는 것입니다. 운영 시간, 예약 가능 여부, 그리고 결제 방식은 방문 전 반드시 체크해 두어야 합니다. 이 정보는 대체로 셔츠룸 공식 홈페이지나 SNS에 업데이트되어 있으니, 최신 정보를 확인하는 습관을 들이면 좋습니다.</p>
+      <p>두 번째로 중요한 것은 위치와 접근성입니다. 합정역을 중심으로 도보 5분 이내에 있는 셔츠룸이 대부분이지만, 일부는 골목 안쪽에 숨겨져 있어 찾아가기 어려울 수 있습니다. 구글 지도 혹은 네이버 지도를 활용해 정확한 위치와 주변 교통수단을 미리 파악해 두면, 현장에서 시간을 절약할 수 있습니다.</p>
+    </section>
+
+    <!-- 2. 인원·시점·목적별 선택 가이드 -->
+    <section id="scenario-guide">
+      <h2>인원·시점·목적별 맞춤 셔츠룸 선택 가이드</h2>
+
+      <h3>① 인원 규모에 따른 추천</h3>
+      <p>2~4명 정도의 소규모 모임이라면 좌석이 넓고 프라이버시가 보장되는 소형 룸을 선택하는 것이 편합니다. 이 경우, 예약 시스템이 온라인으로 운영되는 곳이 많아 미리 예약을 해두면 좌석 부족 상황을 피할 수 있습니다.</p>
+      <p>5명 이상, 파티나 워크숍을 계획하고 있다면 대형 프리미엄 룸을 고려해 보세요. 대형 룸은 조명과 사운드 시스템이 별도 구비돼 있어 분위기 연출이 자유롭습니다. 다만, 인원당 가격이 다소 상승하므로 예산을 사전에 계산해 두는 것이 좋습니다.</p>
+
+      <h3>② 시점(시간대)별 고려 요인</h3>
+      <p>주말 저녁은 가장 붐비는 시간대이므로, 예약 가능한 시간을 확인하고 최소 30분 전에는 도착하는 것이 안전합니다. 반면, 평일 낮 시간대는 비교적 한가하므로 즉석 방문이 가능하고, 종종 할인 혜택을 제공하는 경우도 있습니다.</p>
+      <p>특히 새벽이나 새벽 직전(밤 12시~2시)에는 일부 셔츠룸이 운영을 마감하거나 추가 요금을 부과할 수 있으니, 사전에 운영 종료 시간을 반드시 확인하세요.</p>
+
+      <h3>③ 목적별 체크 포인트</h3>
+      <p>‘데이트’를 목적이라면 분위기와 조명이 중요한 요소가 됩니다. 조명이 부드럽고 음악이 흐르는 분위기 조성 옵션이 있는 곳을 선택하면 더욱 로맨틱한 시간을 만들 수 있습니다.</p>
+      <p>‘포트레이트 촬영’이라면 배경벽과 조명 설비가 갖춰진 셔츠룸을 찾아보세요. 일부 셔츠룸은 전문 사진작가와 협업해 촬영 패키지를 제공하기도 하니, 이런 옵션을 활용하면 별도의 장비를 준비하지 않아도 됩니다.</p>
+    </section>
+
+    <!-- 3. FAQ -->
+    <section id="faq">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <h3>Q1. 셔츠룸은 사전 예약이 반드시 필요할까?</h3>
+      <p>A1. 대부분의 셔츠룸은 당일 현장 예약도 가능하지만, 인기 시간대(주말 저녁, 공휴일)에는 미리 예약하는 것이 안전합니다. 온라인 예약 시스템을 제공하는 곳은 결제까지 미리 완료할 수 있어 현장 대기 시간을 최소화할 수 있습니다.</p>
+
+      <h3>Q2. 남녀 구분이 없는 셔츠룸도 있을까?</h3>
+      <p>A2. 합정 지역에는 남녀 구분이 없는 자유로운 공간도 일부 존재합니다. 이 경우, 이용 규칙이 다소 유연하므로 사전에 운영 정책을 확인하고, 타인에게 불편을 주지 않도록 예의를 지키는 것이 중요합니다.</p>
+
+      <h3>Q3. 결제 방식은 어떤 것이 가능한가?</h3>
+      <p>A3. 현금, 카드 결제는 기본이며, 최근에는 카카오페이·네이버페이·QR코드 결제까지 지원하는 셔츠룸이 늘고 있습니다. 특히 단체 예약 시에는 전자 결제 시스템을 활용하면 정산이 편리합니다.</p>
+    </section>
+
+    <!-- 4. 마무리 팁 -->
+    <section id="final-tips">
+      <h2>합정 셔츠룸 이용을 위한 마무리 팁</h2>
+      <p>방문 전에는 반드시 셔츠룸 운영자의 SNS나 공지 사항을 확인해 최신 프로모션이나 운영 변경 사항을 체크하세요. 급변하는 상황에 따라 임시 휴업이나 운영시간 변동이 있을 수 있습니다.</p>
+      <p>또한, 셔츠룸 내부에서는 다른 손님과의 거리두기와 소음 관리에 유의해야 합니다. 개인 물품은 잠금 가능한 보관함에 보관하고, 소지품 분실 방지를 위해 사진을 남겨 두는 것이 좋습니다.</p>
+      <p>마지막으로, 즐거운 경험을 위해서는 사전에 원하는 분위기와 목적을 명확히 정리하고, 이를 바탕으로 가장 알맞은 셔츠룸을 선택하는 것이 핵심입니다. 이 가이드를 참고하여 합정에서 특별한 순간을 만들어 보세요!</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 합정 셔츠룸 가이드. All rights reserved.</p>
+  </footer>
 </body>
 </html>
